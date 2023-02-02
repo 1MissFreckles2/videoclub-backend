@@ -20,20 +20,20 @@ public class MovieEntity {
     @Column(name =  "actors")
     private String actors;
     @Column(name =  "cod_gender")
-    private Integer cod_gender;
+    private Integer codGender;
 
     public MovieEntity() {
 
     }
 
 
-    public MovieEntity(Integer cod_movie, String descript, String title, String director, String actors, Integer cod_gender) {
+    public MovieEntity(Integer cod_movie, String descript, String title, String director, String actors, Integer codGender) {
         this.cod_movie = cod_movie;
         this.descript = descript;
         this.title = title;
         this.director = director;
         this.actors = actors;
-        this.cod_gender = cod_gender;
+        this.codGender = codGender;
     }
 
     public Integer getCod_movie() {
@@ -76,11 +76,11 @@ public class MovieEntity {
         this.actors = actors;
     }
 
-    public Integer getCod_gender() {
-        return cod_gender;
+    public Integer getCodGender() {
+        return codGender;
     }
 
-    public void setCod_gender(Integer cod_gender) {
-        this.cod_gender = cod_gender;
+    public void setCodGender(Integer codGender) {
+        this.codGender = codGender;
     }
 }
