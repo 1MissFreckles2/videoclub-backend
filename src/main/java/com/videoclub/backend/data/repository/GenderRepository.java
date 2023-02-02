@@ -10,5 +10,5 @@ import java.util.List;
 public interface GenderRepository extends JpaRepository<GenderEntity, Integer> {
     // primero es tipo y luego id es interface porque tiene los metodos ya listos
 
-    List<GenderEntity> findByName_gender(String name_gender);
+   // List<GenderEntity> findByName_gender(String name_gender);
 }

@@ -12,13 +12,13 @@ public class MovieEntity {
     @Column(name =  "cod_movie")
     private Integer cod_movie;
     @Column(name =  "descript")
-    private Integer descript;
+    private String descript;
     @Column(name =  "title")
-    private Integer title;
+    private String title;
     @Column(name =  "director")
-    private Integer director;
+    private String director;
     @Column(name =  "actors")
-    private Integer actors;
+    private String actors;
     @Column(name =  "cod_gender")
     private Integer cod_gender;
 
@@ -26,7 +26,8 @@ public class MovieEntity {
 
     }
 
-    public MovieEntity(Integer cod_movie, Integer descript, Integer title, Integer director, Integer actors, Integer cod_gender) {
+
+    public MovieEntity(Integer cod_movie, String descript, String title, String director, String actors, Integer cod_gender) {
         this.cod_movie = cod_movie;
         this.descript = descript;
         this.title = title;
@@ -43,35 +44,35 @@ public class MovieEntity {
         this.cod_movie = cod_movie;
     }
 
-    public Integer getDescript() {
+    public String getDescript() {
         return descript;
     }
 
-    public void setDescript(Integer descript) {
+    public void setDescript(String descript) {
         this.descript = descript;
     }
 
-    public Integer getTitle() {
+    public String getTitle() {
         return title;
     }
 
-    public void setTitle(Integer title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
-    public Integer getDirector() {
+    public String getDirector() {
         return director;
     }
 
-    public void setDirector(Integer director) {
+    public void setDirector(String director) {
         this.director = director;
     }
 
-    public Integer getActors() {
+    public String getActors() {
         return actors;
     }
 
-    public void setActors(Integer actors) {
+    public void setActors(String actors) {
         this.actors = actors;
     }
 
